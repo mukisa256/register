@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(158, 216, 158);
+    height: 100vh;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.sub-main{
+    background-color: green;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: cursive;
+}
+h1{
+    font-family: sans-serif;
+    text-align: center;
+}
+input[type = "text"],[type = "email"]{
+ font-size: medium;
+ width: 80%;
+ padding:5px ;
+ border: none;
+ outline: none;
+ border-radius: 5px;
+ margin: 10px  20px;
+}
+p{
+    margin: 20px;
+}
+.btn{
+    margin: 10px 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: cursive;
+    font-size:15px;
+    cursor: pointer;
+}
