@@ -19,7 +19,27 @@
                 <input type="text" name="phone" required>
                 <button type="submit" class="btn" name="submit">Submit</button>
             </form>
+
         </div>
     </div>
+    <?php
+         include 'data-process.php';
+             $fetchedData = fetchData();
+                echo "<h2>Fetched Data:</h2>";
+                echo "<table border='1'>
+                        <tr>
+                            <th>Name</th><th>Address</th><th>Phone</th>
+                        </tr>";
+
+                foreach ($fetchedData as $row) {
+                    echo "<tr>
+                            <td>" . $row['Name'] . "</td><td>" . $row['Address'] . "</td><td>" . $row['Phone'] . "</td>
+                        </tr>";
+                }
+
+                echo "</table>";
+        
+        
+        ?>
 </body>
 </html>
